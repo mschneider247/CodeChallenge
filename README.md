@@ -11,4 +11,3 @@ We use code challenges to assess your programming skill. You are free to pick fr
 * No MVC frameworks
 * Use MySQL if appropriate, include SQL
 * We want to be able to run your submission, not just look at the code
-* Have fun!
