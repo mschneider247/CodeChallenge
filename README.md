@@ -8,7 +8,7 @@ We use code challenges to assess programming skill. You are free to pick from an
 
 ### Rules
 * Anything on the server side or command line MUST use PHP
-* No MVC frameworks
+* No MVC frameworks (unless you make it)
 * Use MySQL if appropriate, include SQL
 * We want to be able to run your submission, not just look at the code
 
