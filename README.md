@@ -5,6 +5,7 @@ We use code challenges to assess programming skill. You are free to pick from an
 * [Polling Application](https://github.com/BroadnetEngineering/PollingApp "Polling App")
 * [Text File Manipulation](https://github.com/BroadnetEngineering/TextFiles "Text File Manipulation")
 * [Event Application](https://github.com/BroadnetEngineering/EventApp "Event App")
+* Or, do something else of your choosing. Just follow the rules below and submit your PR to this repo!
 
 ### Rules
 * Anything on the server side or command line MUST use PHP
