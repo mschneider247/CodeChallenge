@@ -8,9 +8,8 @@ We use code challenges to assess programming skill. You are free to pick from an
 * Or, do something else of your choosing. Just follow the rules below and submit your PR to this repo!
 
 ### Rules
-* Anything on the server side or command line MUST use PHP
-* No MVC frameworks (unless you make it)
-* Use MySQL if appropriate, include SQL
+* No server-side MVC frameworks (unless you make it)
+* Use MySQL if appropriate, include schema necessary to run your code
 * We want to be able to run your submission, not just look at the code
 
 ### Submissions
