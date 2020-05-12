@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './NewProject.css';
-import { Container, Input, Typography } from '@material-ui/core';
+import { Container, Input, Typography, Tooltip, Button } from '@material-ui/core';
 
 class NewProject extends Component {
   constructor() {
@@ -14,6 +14,10 @@ class NewProject extends Component {
     }
   }
 
+  inputTitle = (e) => {
+    this.setState({ [e.target.name] : e.target.value })
+  }
+
   render() {
     return (
       <Container maxWidth="lg" id="new_project">
@@ -25,7 +29,13 @@ class NewProject extends Component {
           name="title"
           type="text"
           value={this.state.title}
+          onchange={(e) => this.inputTitle(e)}
         />
+        <Tooltip title="Add Project!" arrow>
+          <Button variant="contained" color="primary">
+            +
+          </Button>
+        </Tooltip>
       </Container>
     )
   }
