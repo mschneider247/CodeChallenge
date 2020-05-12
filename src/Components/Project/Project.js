@@ -5,7 +5,7 @@ import { Container, Typography, Button } from '@material-ui/core';
 const Project = (props) => {
   return (
     <Container maxWidth='lg' className="project">
-      <Typography>
+      <Typography display="inline">
         {props.title}
         <Button 
           id="deleteBtn"

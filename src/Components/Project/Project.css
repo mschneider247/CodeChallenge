@@ -1,18 +1,16 @@
 .project {
   display: flex;
+  flex-wrap: wrap;
   border: 2px solid green;
   padding: 2%;
   margin: 2%;
   border-radius: 10px;
-}
-
-.project_title {
-  display: inline;
+  padding-bottom: 4%;
 }
 
 #deleteBtn {
+  float: right;
   background-color: rebeccapurple;
-  margin-left: 75%;
 }
 
 #deleteBtn:hover {
