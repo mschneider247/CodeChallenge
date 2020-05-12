@@ -3,6 +3,7 @@ import './App.css';
 import Header from '../Header/Header';
 import Search from '../Search/Search';
 import NewProject from '../New Project/NewProject';
+import ProjectContainer from '../Project Container/ProjectContainer';
 import { Container } from '@material-ui/core';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
         <Header />
         <Search />
         <NewProject />
+        <ProjectContainer />
       </Container>
     )
   }

@@ -18,7 +18,7 @@ class NewProject extends Component {
     return (
       <Container maxWidth="lg" id="new_project">
         <Typography>
-          Add a new project!
+          Add a new project:
         </Typography>
         <Input
           placeholder="Project Title"
