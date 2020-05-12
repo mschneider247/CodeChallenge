@@ -7,7 +7,9 @@ const Project = (props) => {
     <Container maxWidth='lg' className="project">
       <Typography>
         {props.title}
-        <Button id="deleteBtn">
+        <Button 
+          id="deleteBtn"
+          onClick={() => props.deleteProject(props.id)}>
             X
         </Button>
       </Typography>

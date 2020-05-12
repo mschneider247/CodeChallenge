@@ -22,12 +22,25 @@ class App extends Component {
     }
   }
 
+  deleteProject = (id) => {
+    let currentProjects = [...this.state.projects];
+    currentProjects.forEach((project, index) => {
+      if (project.id === id){
+        currentProjects.splice(index, 1)
+      }
+    });
+    this.setState({ projects : currentProjects });
+  }
+
   render () {
     return (
       <Container id="App">
         <Header />
         <NewProject addNewProject={this.addNewProject}/>
-        <ProjectContainer projects={this.state.projects}/>
+        <ProjectContainer 
+          projects={this.state.projects}
+          deleteProject={this.deleteProject}
+        />
       </Container>
     )
   }

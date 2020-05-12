@@ -11,6 +11,7 @@ const ProjectContainer = (props) => {
         key={project.id}
         id={project.id}
         title={project.title}
+        deleteProject={props.deleteProject}
       />
   )})
 
