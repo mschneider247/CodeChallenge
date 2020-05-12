@@ -3,11 +3,11 @@ import './NewProject.css';
 import { Container, Input, Typography, Tooltip, Button } from '@material-ui/core';
 
 class NewProject extends Component {
-  constructor() {
+  constructor(props) {
     super();
     this.state = {
       id: 0,
-      title: '',
+      title: "",
       urgent: false,
       complette: false,
       subtasks: [],
@@ -18,26 +18,32 @@ class NewProject extends Component {
     this.setState({ [e.target.name] : e.target.value })
   }
 
+  inputProject = () => {
+    console.log("Button");
+    this.props.addNewProject(this.state)
+  }
+
   render() {
     return (
       <Container maxWidth="lg" id="new_project">
-        <Typography>
-          Add a new project:
-        </Typography>
+        <Typography>Add a new project:</Typography>
         <Input
-          placeholder="Project Title"
+          placeholder="Search"
           name="title"
           type="text"
           value={this.state.title}
-          onchange={(e) => this.inputTitle(e)}
+          onChange={e => this.inputTitle(e)}
         />
         <Tooltip title="Add Project!" arrow>
-          <Button variant="contained" color="primary">
+          <Button 
+            variant="contained" 
+            color="primary"
+            onClick={() => this.inputProject()}>
             +
           </Button>
         </Tooltip>
       </Container>
-    )
+    );
   }
 }
 

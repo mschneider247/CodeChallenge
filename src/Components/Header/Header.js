@@ -6,7 +6,7 @@ const Header = () => {
 
   return (
     <Typography variant="h2">
-      Todo it App!
+      Todo it!
     </Typography>
   )
 }

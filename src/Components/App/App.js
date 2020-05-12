@@ -14,12 +14,18 @@ class App extends Component {
     }
   }
 
+  addNewProject = (project) => {
+    let newProjects = [...this.state.projects];
+    newProjects.push(project);
+    this.setState({ projects : newProjects})
+  }
+
   render () {
     return (
       <Container>
         <Header />
         <Search />
-        <NewProject />
+        <NewProject addNewProject={this.addNewProject}/>
         <ProjectContainer />
       </Container>
     )

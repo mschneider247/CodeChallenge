@@ -5,7 +5,7 @@ import { Container, Typography } from '@material-ui/core';
 const Project = (props) => {
   return (
     <Container maxWidth='xs'>
-      <Typography variant='h6'>
+      <Typography variant='p'>
         Project
       </Typography>
     </Container>
