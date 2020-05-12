@@ -1,6 +1,21 @@
 .project {
+  display: flex;
   border: 2px solid green;
   padding: 2%;
   margin: 2%;
   border-radius: 10px;
+}
+
+.project_title {
+  display: inline;
+}
+
+#deleteBtn {
+  background-color: rebeccapurple;
+  margin-left: 85%;
+}
+
+#deleteBtn:hover {
+  background-color: brown;
+  color: white;
 }

@@ -16,8 +16,10 @@ class App extends Component {
 
   addNewProject = (project) => {
     let newProjects = [...this.state.projects];
-    newProjects.push(project);
-    this.setState({ projects : newProjects})
+    if (project.title !== '') {
+      newProjects.push(project);
+      this.setState({ projects : newProjects})
+    }
   }
 
   render () {

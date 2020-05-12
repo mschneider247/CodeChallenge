@@ -1,14 +1,16 @@
 import React from 'react';
 import './Project.css';
-import { Container, Typography } from '@material-ui/core';
+import { Container, Typography, Button } from '@material-ui/core';
 
 const Project = (props) => {
   return (
-    <Container maxWidth='xs' className="project">
+    <Container maxWidth='lg' className="project">
       <Typography>
         {props.title}
+        <Button id="deleteBtn">
+            X
+        </Button>
       </Typography>
-      {props.urgency}
     </Container>
   )
 }
