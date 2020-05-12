@@ -4,10 +4,11 @@ import { Container, Typography } from '@material-ui/core';
 
 const Project = (props) => {
   return (
-    <Container maxWidth='xs'>
-      <Typography variant='p'>
+    <Container maxWidth='xs' className="project">
+      <Typography>
         {props.title}
       </Typography>
+      {props.urgency}
     </Container>
   )
 }

@@ -14,7 +14,7 @@ const ProjectContainer = (props) => {
   })
 
   return (
-    <Container maxWidth='lg'>
+    <Container maxWidth='lg' id="projectContainer">
       <Typography>
         Current Projects:
       </Typography>

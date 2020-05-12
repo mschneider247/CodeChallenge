@@ -19,8 +19,9 @@ class NewProject extends Component {
   }
 
   inputProject = () => {
-    console.log("Button");
+    this.setState({ id : Date.now() })
     this.props.addNewProject(this.state)
+    this.setState({ title : '' })
   }
 
   render() {
@@ -28,14 +29,15 @@ class NewProject extends Component {
       <Container maxWidth="lg" id="new_project">
         <Typography>Add a new project:</Typography>
         <Input
-          placeholder="Search"
+          placeholder="Title"
           name="title"
           type="text"
           value={this.state.title}
           onChange={e => this.inputTitle(e)}
         />
         <Tooltip title="Add Project!" arrow>
-          <Button 
+          <Button
+            id="inputProjectBtn" 
             variant="contained" 
             color="primary"
             onClick={() => this.inputProject()}>
