@@ -26,7 +26,7 @@ class App extends Component {
         <Header />
         <Search />
         <NewProject addNewProject={this.addNewProject}/>
-        <ProjectContainer />
+        <ProjectContainer projects={this.state.projects}/>
       </Container>
     )
   }

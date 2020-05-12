@@ -6,7 +6,7 @@ const Project = (props) => {
   return (
     <Container maxWidth='xs'>
       <Typography variant='p'>
-        Project
+        {props.title}
       </Typography>
     </Container>
   )

@@ -5,14 +5,20 @@ import Project from '../Project/Project';
 
 const ProjectContainer = (props) => {
 
-  let projects;
+  let currentProjects = props.projects.map(project => {
+    return <Project
+      key={project.id}
+      id={project.id}
+      title={project.title}
+      />
+  })
 
   return (
     <Container maxWidth='lg'>
       <Typography>
         This is the Project Container
-        <Project />
       </Typography>
+      {currentProjects}
     </Container>
   )
 }
