@@ -1,13 +1,17 @@
 import React from 'react';
 import './Header.css';
-import { Typography } from '@material-ui/core';
+import { Typography, Container } from '@material-ui/core';
+import Search from '../Search/Search';
 
 const Header = () => {
 
   return (
-    <Typography variant="h2">
-      Todo it!
-    </Typography>
+    <Container maxWidth="lg" id="header">
+      <Typography variant="h2">
+        Todo it!
+      </Typography>
+      <Search />
+    </Container>
   )
 }
 

@@ -16,7 +16,7 @@ const ProjectContainer = (props) => {
   return (
     <Container maxWidth='lg'>
       <Typography>
-        This is the Project Container
+        Current Projects:
       </Typography>
       {currentProjects}
     </Container>

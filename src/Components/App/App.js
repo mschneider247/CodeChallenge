@@ -22,9 +22,8 @@ class App extends Component {
 
   render () {
     return (
-      <Container>
+      <Container id="App">
         <Header />
-        <Search />
         <NewProject addNewProject={this.addNewProject}/>
         <ProjectContainer projects={this.state.projects}/>
       </Container>
