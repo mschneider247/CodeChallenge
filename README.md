@@ -17,9 +17,12 @@ by: [Michael Schneider](https://github.com/mschneider247)
 
 ### White-boarding initial design
   [Trello Project Board](https://trello.com/b/vwzP5yRF/todo-app-react-material-ui)<br/>
-  ![white-boarding]()
+  ![whiteboard](https://user-images.githubusercontent.com/21366524/81777384-ee826f00-94ad-11ea-8035-83ad652dbb82.png)
 
 ### ScreenShots
-  ![screenshot1]()<br/>
-  ![screenshot2]()<br/>
-  ![screenshot3]()
+#### Adding New Projects
+![Image 5-12-20 at 11 29 PM](https://user-images.githubusercontent.com/21366524/81776570-45874480-94ac-11ea-908e-6210159e43f6.jpg)
+#### Searching Projects
+![Image 5-12-20 at 11 30 PM](https://user-images.githubusercontent.com/21366524/81776577-491acb80-94ac-11ea-8a21-cf6a6101d62d.jpg)
+#### Editing Project Names
+![Image 5-12-20 at 11 31 PM](https://user-images.githubusercontent.com/21366524/81776581-4ae48f00-94ac-11ea-9450-149a7aedf7f1.jpg)
