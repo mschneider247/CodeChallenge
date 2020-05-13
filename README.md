@@ -3,7 +3,7 @@
 by: [Michael Schneider](https://github.com/mschneider247)
 
 ## Overview
-  check out the [live site!!]()
+  check out the [live site!!](https://mschneider247.github.io/CodeChallenge/)
 
   This is a code challenge designed around creating a todo list. Application built using `create-react-app` and `@material_ui/core`, additional CSS added to tweak design.
 
