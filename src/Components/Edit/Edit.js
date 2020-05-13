@@ -20,7 +20,7 @@ class Edit extends Component {
 
   render() {
     return (
-      <Container maxWidth="lg" id="new_project">
+      <Container maxWidth="lg" id="add_new_project">
         <Typography>Change project title:</Typography>
         <Input
           placeholder="new Title"
