@@ -1,16 +1,25 @@
 # Broadnet Code Challenge
-We use code challenges to assess programming skill. You are free to pick from any of the following code challenges:
+[Simple Todo List](https://github.com/BroadnetEngineering/TodoList)
+by: [Michael Schneider](https://github.com/mschneider247)
 
-* [Simple Todo List](https://github.com/BroadnetEngineering/TodoList "Simple Todo List")
-* [Polling Application](https://github.com/BroadnetEngineering/PollingApp "Polling App")
-* [Text File Manipulation](https://github.com/BroadnetEngineering/TextFiles "Text File Manipulation")
-* [Event Application](https://github.com/BroadnetEngineering/EventApp "Event App")
-* Or, do something else of your choosing. Just follow the rules below and submit your PR to this repo!
+## Overview
+  check out the [live site!!]()
 
-### Rules
-* No server-side MVC frameworks (unless you make it)
-* Use MySQL if appropriate, include schema necessary to run your code
-* We want to be able to run your submission, not just look at the code
+  This is a code challenge designed around creating a todo list. Application built using `create-react-app` and `@material_ui/core`, additional CSS added to tweak design.
 
-### Submissions
-* Submit your code as a PR to the repo of the project you chose
+### Local set up
+  * fork a copy of this repository and then clone down your own version
+  * alternatly, pull down the most recent branch into a development environment
+  * make sure dependencies are installed with `npm install`
+  * `npm start`
+  * visit your browser at localhost:3000
+
+
+### White-boarding initial design
+  [Trello Project Board](https://trello.com/b/vwzP5yRF/todo-app-react-material-ui)<br/>
+  ![white-boarding]()
+
+### ScreenShots
+  ![screenshot1]()<br/>
+  ![screenshot2]()<br/>
+  ![screenshot3]()

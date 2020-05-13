@@ -10,6 +10,7 @@ class App extends Component {
     super();
     this.state = {
       projects: [],
+      filteredProjects: [],
     }
   }
 
@@ -34,10 +35,13 @@ class App extends Component {
   editProject = (id) => {
     let currentProjects = [...this.state.projects];
     currentProjects.find(project => project.id === id).edit = true;
-    this.setState({ projects: currentProjects });
+    this.setState({ filteredProjects: currentProjects });
   }
 
   inputNewTitle = (id, newTitle) => {
+    if (!newTitle) {
+      return
+    }
     let projects = [...this.state.projects];
     let updatedProject = projects.find(project => project.id === id);
     updatedProject.title = newTitle;
@@ -45,10 +49,25 @@ class App extends Component {
     this.setState({ projects: projects });
   }
 
+  updateSearch = (query) => {
+    let currentProjects = [...this.state.projects]
+    let sortedProjects = [];
+    currentProjects.forEach(project => {
+      if (project.title.includes(query)){
+        sortedProjects.unshift(project)
+      } else {
+        sortedProjects.push(project)
+      }
+    })
+    this.setState({ projects: sortedProjects })
+  }
+
   render () {
     return (
       <Container id="App">
-        <Header />
+        <Header 
+          updateSearch={this.updateSearch}
+        />
         <NewProject addNewProject={this.addNewProject}/>
         <ProjectContainer 
           projects={this.state.projects}
