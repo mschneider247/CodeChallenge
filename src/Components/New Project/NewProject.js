@@ -16,7 +16,6 @@ class NewProject extends Component {
   }
 
   inputTitle = (e) => {
-    console.log("e.target.value for name", e.target.value);
     this.setState({ [e.target.name] : e.target.value })
   }
 

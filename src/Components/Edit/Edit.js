@@ -18,13 +18,6 @@ class Edit extends Component {
     this.setState({ updateId: this.props.id});
   }
 
-  updateTitle = (e) => {
-    console.log("Update Title!!!!??")
-    console.log(e);
-    console.log(this.state.updateTitle);
-    this.props.inputNewTitle(this.state.updateId, this.state.updateTitle);
-  }
-
   render() {
     return (
       <Container maxWidth="lg" id="new_project">
