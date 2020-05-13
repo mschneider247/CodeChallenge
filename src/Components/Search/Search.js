@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './Search.css';
-import { Container, Input } from '@material-ui/core'
+import { Container, Input, Tooltip } from '@material-ui/core'
 
 class Search extends Component {
   constructor() {
@@ -18,13 +18,15 @@ class Search extends Component {
   render() {
     return (
       <Container maxwidth='xs'>
-        <Input
-          placeholder="Search"
-          name="search"
-          type="text"
-          value={this.state.search}
-          onChange={(e) => this.inputSearch(e)}
-        />
+        <Tooltip title="Sort Projects" arrow>
+          <Input
+            placeholder="Search"
+            name="search"
+            type="text"
+            value={this.state.search}
+            onChange={(e) => this.inputSearch(e)}
+          />
+        </Tooltip>
       </Container>
     )
   }
