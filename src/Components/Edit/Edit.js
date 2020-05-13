@@ -35,7 +35,7 @@ class Edit extends Component {
             variant="contained" 
             color="primary"
             onClick={() => this.props.inputNewTitle(this.state.updateId, this.state.updateTitle)}>
-            +
+            Update title
           </Button>
         </Tooltip>
       </Container>
