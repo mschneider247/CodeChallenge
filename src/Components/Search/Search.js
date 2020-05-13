@@ -6,8 +6,12 @@ class Search extends Component {
   constructor() {
     super();
     this.state = {
-      search: '',
+      search: "",
     }
+  }
+
+  inputSearch = (e) => {
+    this.setState({ [e.target.name] : e.target.value });
   }
 
   render() {
@@ -18,6 +22,7 @@ class Search extends Component {
           name="search"
           type="text"
           value={this.state.search}
+          onChange={(e) => this.inputSearch(e)}
         />
       </Container>
     )
