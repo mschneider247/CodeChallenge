@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import Header from '../Header/Header';
-import Search from '../Search/Search';
 import NewProject from '../New Project/NewProject';
 import ProjectContainer from '../Project Container/ProjectContainer';
 import { Container } from '@material-ui/core';
@@ -32,6 +31,20 @@ class App extends Component {
     this.setState({ projects : currentProjects });
   }
 
+  editProject = (id) => {
+    let currentProjects = [...this.state.projects];
+    currentProjects.find(project => project.id === id).edit = true;
+    this.setState({ projects: currentProjects });
+  }
+
+  inputNewTitle = (id, newTitle) => {
+    let projects = [...this.state.projects];
+    let updatedProject = projects.find(project => project.id === id);
+    updatedProject.title = newTitle;
+    updatedProject.edit = false;
+    this.setState({ projects: projects });
+  }
+
   render () {
     return (
       <Container id="App">
@@ -40,6 +53,8 @@ class App extends Component {
         <ProjectContainer 
           projects={this.state.projects}
           deleteProject={this.deleteProject}
+          editProject={this.editProject}
+          inputNewTitle={this.inputNewTitle}
         />
       </Container>
     )

@@ -3,7 +3,7 @@ import './NewProject.css';
 import { Container, Input, Typography, Tooltip, Button } from '@material-ui/core';
 
 class NewProject extends Component {
-  constructor(props) {
+  constructor() {
     super();
     this.state = {
       id: 0,
@@ -11,10 +11,12 @@ class NewProject extends Component {
       urgent: false,
       complette: false,
       subtasks: [],
+      edit: false,
     }
   }
 
   inputTitle = (e) => {
+    console.log("e.target.value for name", e.target.value);
     this.setState({ [e.target.name] : e.target.value })
   }
 

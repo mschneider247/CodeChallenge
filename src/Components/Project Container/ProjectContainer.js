@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProjectContainer.css';
-import { Container, Typography, Button } from '@material-ui/core';
+import { Container, Typography } from '@material-ui/core';
 import Project from '../Project/Project';
 
 const ProjectContainer = (props) => {
@@ -12,6 +12,9 @@ const ProjectContainer = (props) => {
         id={project.id}
         title={project.title}
         deleteProject={props.deleteProject}
+        edit={project.edit}
+        editProject={props.editProject}
+        inputNewTitle={props.inputNewTitle}
       />
   )})
 
@@ -20,6 +23,7 @@ const ProjectContainer = (props) => {
       <Typography>
         Current Projects:
       </Typography>
+
       {currentProjects}
     </Container>
   )
