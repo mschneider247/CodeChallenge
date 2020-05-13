@@ -15,7 +15,7 @@ by: [Michael Schneider](https://github.com/mschneider247)
   * visit your browser at localhost:3000
 
 
-### White-boarding initial design
+### KanBan and White boarding
   [Trello Project Board](https://trello.com/b/vwzP5yRF/todo-app-react-material-ui)<br/>
   ![whiteboard](https://user-images.githubusercontent.com/21366524/81777384-ee826f00-94ad-11ea-8035-83ad652dbb82.png)
 
