@@ -12,6 +12,7 @@ class Search extends Component {
 
   inputSearch = (e) => {
     this.setState({ [e.target.name] : e.target.value });
+    this.props.updateSearch(e.target.value);
   }
 
   render() {

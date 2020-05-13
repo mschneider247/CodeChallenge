@@ -3,14 +3,19 @@ import './Header.css';
 import { Typography, Container } from '@material-ui/core';
 import Search from '../Search/Search';
 
-const Header = () => {
+const Header = (props) => {
 
   return (
     <Container maxWidth="lg" id="header">
-      <Typography variant="h2">
+      <Typography 
+        variant="h2" 
+        id="page_title"
+        display="inline">
         Todo it!
       </Typography>
-      <Search />
+      <Search 
+        class="search_box"
+        updateSearch={props.updateSearch}/>
     </Container>
   )
 }

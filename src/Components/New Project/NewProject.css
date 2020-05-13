@@ -1,5 +1,8 @@
 #new_project {
-  padding: 2%;
+  padding: 6%;
+  margin: 2%;
+  background-color: rgb(252, 254, 254);
+  border-radius: 10px;
 }
 
 #inputProjectBtn {
